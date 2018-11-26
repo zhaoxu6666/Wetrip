@@ -46,14 +46,16 @@
         }
         #zidingyi{
         	width: 60px;
-        	height: 30px;
+        	height: 26px;
         }
-        .a{float:left;width:100%;margin:10px;}
-        .a a{float:left;margin:10px;}
-        #tuisong{float: right;margin-right: 150px;margin-top: 20px; }
-        #h7{margin-left: 20px;}
-        #shi{margin-left: 59px;}
-        #quanxian{margin-left: 147px;}
+        #xiaotuisong{
+        	height: 70px;
+        }
+        .si{
+        	height: 20px;
+        	width: 200px;
+        	margin-top: 25px;
+        }
     </style>
 
 
@@ -152,44 +154,43 @@
 				<div class="single-blog-post" style="margin-bottom: 15px;">
 					<div class="container">
 				        <div id="editor-trigger">
-				        <!--input框-->
+				        	<!--input框-->
 				        </div>
-				        <!--Address html-->
-				        <!--地址的获得省的Span中class=pick-province；市的Span中的class=pick-city-->
-					    <div class="a">
-						    <a href="javascript:void(0)" class="pick-area pick-area5" name=""></a>
-						    <form id="tuisong" action="" method="get">
-						    	<!--获得是否参加每日的话题推送 通过复选框的值来获得-->
-								<input id="shi" type="checkbox" name="是" value="" checked>参加每日话题推送
-							</form>
-					    </div>
-					    <!--tag-->
-					    <div>
-					    	<h7 id="h7">标签:&nbsp&nbsp&nbsp&nbsp</h7>
+				        <div>
+				        	<!-- 放上传图片的位置 -->
+				        </div>
+				        <div class="si">
+				        	<!-- 标签 -->
+				        	<h7 id="h7">标签:&nbsp&nbsp&nbsp&nbsp</h7>
 							<select id="city" class="select">
 							    <option value="贵阳">风景</option>
 							    <option value="六盘水">美食</option>
 							    <option value="都匀">玩耍</option>
 							    <option value="福泉">周边</option>	
 							</select>
-
+				        </div>
+				        <div class="si">
+				        	<!-- 自定义标签 -->
 							<h7 id="h7">自定义标签:&nbsp&nbsp&nbsp&nbsp</h7>
 							<input type="text" name="" id="zidingyi">
-
+						</div>
+						<div class="si">
+							<!-- 权限 -->
 							<h7 id="quanxian">权限:&nbsp&nbsp&nbsp&nbsp</h7>
-							<!--不建议有这个标签，因为在这上面编辑内容的都是要让别人发现的-->
 							<select id="city" class="select">
 							    <option value="1">自己看</option>
 							    <option value="2">仅同城</option>
 							    <option value="3">全世界</option>
 							</select>
+						</div>
+						<div class="si">
+							<!-- 参与话题及发表 -->
+							<input id="shi" type="checkbox" name="是" value="" checked>参加每日话题推送
 							<!--提交按钮-->
 							<input type="button" name="" value="发表">
-					    </div>
-					    <!--tag-->
+					    </div>					    
 					</div> <!-- /.post-meta-box -->
-				</div> <!--富文本框的展示-->
-			
+				</div> <!--富文本框的展示-->			
 		</div> <!-- /.col- -->
 
 		<!-- ======================== Theme Sidebar =============================== -->
